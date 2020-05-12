@@ -4,7 +4,8 @@ let allButton = document.querySelectorAll("button")
 let playerScoreboard = document.querySelector("data-playerscore");
 let iaScoreboard = document.querySelector("data-iascore");
 
-
+let playerMove = document.getElementById("yourmove");
+let computerMove = document.getElementById("computermove");
 // allButton.forEach(function(element){
 //     element.onclick = function(){
 //         let buttonValue = element.dataset.input;
@@ -34,3 +35,9 @@ function gameStart() {
             }
         });
     }
+
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * Math.floor(max));
+      }
+
+      console.log(getRandomInt(3));
