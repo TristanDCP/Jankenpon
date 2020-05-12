@@ -6,6 +6,11 @@ let iaScoreboard = document.querySelector("data-iascore");
 
 let playerMove = document.getElementById("yourmove");
 let computerMove = document.getElementById("computermove");
+let playerSelect = document.getElementsByClassName("gamebutton");
+let victory = document.getElementById("counterwin");
+let draw = document.getElementById("counterdraw");
+let lose = document.getElementById("counterlose");
+
 // allButton.forEach(function(element){
 //     element.onclick = function(){
 //         let buttonValue = element.dataset.input;
