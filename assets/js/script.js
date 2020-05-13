@@ -8,12 +8,15 @@ let playerMove = document.getElementById("yourmove");
 let computerMove = document.getElementById("computermove");
 let playerSelect = document.getElementsByClassName("gamebutton");
 let victory = document.getElementById("counterwin");
-let draw = document.getElementById("counterdraw").value;
+let draw = document.getElementById("counterdraw");
 let lose = document.getElementById("counterlose");
 
 const possibleChoice = ["rock", "paper", "scissors"];
 let comMove;
 let playerChoice;
+let x = 1;
+let y = 1;
+let z = 1;
 
 allButton.forEach(function (element) {
     element.onclick = function () {
@@ -29,6 +32,7 @@ startButton.onclick = function () {
         console.log(playerChoice);
         console.log(comMove);
         console.log("DRAW");
+        document.getElementById("counterdraw").innerHTML = z++;
     } else {
         let win = true;
         switch (playerChoice) {
@@ -36,25 +40,30 @@ startButton.onclick = function () {
                 if (comMove == "paper") {
                     win == false
                     console.log("Perdu")
+                    document.getElementById("counterlose").innerHTML = y++;
                 } else if (comMove == "scissors") {
                     console.log("Gagné")
-                    victory++;
+                    document.getElementById("counterwin").innerHTML = x++;
                 }
                 break;
             case "paper":
                 if (comMove == "scissors") {
                     win == false
                     console.log("Perdu")
+                    document.getElementById("counterlose").innerHTML = y++;
                 } else if (comMove == "scissors") {
                     console.log("Gagné")
+                    document.getElementById("counterwin").innerHTML = x++;
                 }
                 break;
             case "scissors":
                 if (comMove == "rock") {
                     win == false;
                     console.log("Perdu")
+                    document.getElementById("counterwin").innerHTML = y++;
                 } else if (comMove == "scissors") {
                     console.log("Gagné")
+                    document.getElementById("counterlose").innerHTML = x++;
                 }
                 break;
 
