@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
     <title>Jankenpon</title>
 </head>
 
@@ -11,19 +15,41 @@
     <!-- LES BOUTONS -->
     <section>
         <div id="yourmove"></div>
-        <button type="button" class="gamebutton" data-value="rock">Pierre</button>
-        <button type="button" class="gamebutton" data-value="paper">Feuille</button>
-        <button type="button" class="gamebutton" data-value="scissors">Ciseaux</button>
-        <input type="button" id="gamestart" data-start="battlestart" value="じゃんけんぽん！"></input>
+        <div id="picture" class="d-flex justify-content-center p-2">
+            <button type="button" class="gamebutton" data-value="rock"><img
+                    src="assets/img/Rock-paper-scissors_(rock).png" class="img-fluid" alt="Responsive image"></button>
+            <button type="button" class="gamebutton" data-value="paper"><img
+                    src="assets/img/Rock-paper-scissors_(paper).png" class="img-fluid" alt="Responsive image"></button>
+            <button type="button" class="gamebutton" data-value="scissors"><img
+                    src="assets/img/Rock-paper-scissors_(scissors).png" class="img-fluid" alt="Responsive image"></button>
+        </div>
+        <div class="d-flex justify-content-center p-4">
+            <input type="button" id="gamestart" data-start="battlestart" value="じゃんけんぽん！"></input>
+        </div>
     </section>
     <!-- LES SCORES -->
-    <p>Victoire : <span id="counterwin">0</span></p>
-    <p>Egalité : <span id="counterdraw">0</span></p>
-    <p>Défaite : <span id="counterlose">0</span></p>
+    <div class="d-flex justify-content-center">
+        <p>Victoire : <span id="counterwin">0</span></p>
+    </div>
+    <div class="d-flex justify-content-center">
+        <p>Egalité : <span id="counterdraw">0</span></p>
+    </div>
+    <div class="d-flex justify-content-center">
+        <p>Défaite : <span id="counterlose">0</span></p>
+    </div>
     <section>
         <!-- ORDINATEUR -->
         <div id="computermove"></div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
     <script src="assets/js/script.js"></script>
 </body>
 

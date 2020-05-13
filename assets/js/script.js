@@ -51,7 +51,7 @@ startButton.onclick = function () {
                     win == false
                     console.log("Perdu")
                     document.getElementById("counterlose").innerHTML = y++;
-                } else if (comMove == "scissors") {
+                } else if (comMove == "rock") {
                     console.log("Gagné")
                     document.getElementById("counterwin").innerHTML = x++;
                 }
@@ -61,7 +61,7 @@ startButton.onclick = function () {
                     win == false;
                     console.log("Perdu")
                     document.getElementById("counterwin").innerHTML = y++;
-                } else if (comMove == "scissors") {
+                } else if (comMove == "paper") {
                     console.log("Gagné")
                     document.getElementById("counterlose").innerHTML = x++;
                 }
